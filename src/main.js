@@ -1,8 +1,7 @@
-import { createPinia } from "pinia"
 import { createApp } from 'vue'
 import App from './App.vue'
-import "./index.scss";
+import MyFirstPlugin from "./MyFirstPlugin"
 
-const app = createApp(App)
-app.use(createPinia())
-app.mount('#rd-appstore')
+const app = createApp( App )
+app.use( MyFirstPlugin )
+app.mount( '#rd-appstore' )
